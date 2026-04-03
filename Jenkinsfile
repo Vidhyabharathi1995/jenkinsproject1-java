@@ -9,10 +9,10 @@ pipeline {
     stages {
 
         stage('Checkout') {
-            steps {
-                git 'https://github.com/Reshufowzi/jenkinsproject1-java.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/Reshufowzi/jenkinsproject1-java.git'
+     }
+    }
 
         stage('Build') {
             steps {
